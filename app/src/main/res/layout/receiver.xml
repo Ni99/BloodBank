@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:screenOrientation="sensor"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="25dp"
+                android:text="@string/name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="55dp"
+                android:text="@string/id"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="13dp"
+                android:text="@string/Gender"
+                android:textSize="20sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/male"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/female"
+                    android:textSize="16sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="35dp"
+                android:text="@string/date"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/dd_mm_yyyy"
+                android:textColor="#E0E0E0" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginStart="10sp"
+            android:layout_marginTop="16sp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="2dp"
+            android:text="@string/choose_the_blood_group"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/table_radButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <RadioGroup
+                        android:id="@+id/radGroup1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad1"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="A+ve"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad2"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="A-ve"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad3"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="B+ve"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad4"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="B-ve"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </TableRow>
+
+                <TableRow>
+
+                    <RadioGroup
+                        android:id="@+id/radGroup2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rad5"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="AB+ve"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad6"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="AB-ve"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad7"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:text="O+ve"
+                            android:textSize="15sp" />
+
+                        <RadioButton
+                            android:id="@+id/rad8"
+                            android:layout_width="90sp"
+                            android:layout_height="wrap_content"
+                            android:text="O-ve"
+                            android:textSize="15sp" />
+                    </RadioGroup>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="5sp"
+                android:text="@string/hname"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edithospital"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginStart="10sp"
+                android:layout_marginTop="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:paddingRight="5sp"
+                android:text="@string/cname"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editcity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/send" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/add" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/delete" />
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50sp"
+            android:background="@drawable/button"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/update" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Blood Bank</string>
+    <string name="Gender">Gender:</string>
+    <string name="name">Name:</string>
+    <string name="id">ID:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="date">Date:</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="choose_the_blood_group">Choose the Bloo\d Group:</string>
+    <string name="send">SEND</string>
+    <string name="age">Age:</string>
+    <string name="hname">Hospital:</string>
+    <string name="above_17_years_of_age_eligible">Eligible only if above 17 years of age.</string>
+    <string name="cname">City:</string>
+    <string name="add">ADD</string>
+    <string name="search">SEARCH</string>
+    <string name="delete">DELETE</string>
+    <string name="update">UPDATE</string>
+    <string name="Create_table">CREATE TABLE</string>
+    <string name="load">LOAD</string>
+    <string name="weight">Weight:</string>
+</resources>
